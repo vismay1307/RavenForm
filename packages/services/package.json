@@ -11,7 +11,9 @@
   "dependencies": {
     "@repo/database": "workspace:*",
     "@repo/logger": "workspace:*",
+    "@types/nodemailer": "^8.0.0",
     "google-auth-library": "^10.5.0",
+    "nodemailer": "^8.0.7",
     "zod": "^4.3.5"
   }
 }
