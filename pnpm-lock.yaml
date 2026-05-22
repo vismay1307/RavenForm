@@ -398,6 +398,9 @@ importers:
 
   packages/trpc:
     dependencies:
+      '@repo/database':
+        specifier: workspace:*
+        version: link:../database
       '@repo/services':
         specifier: workspace:*
         version: link:../services

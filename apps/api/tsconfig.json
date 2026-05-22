@@ -4,10 +4,9 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    "moduleResolution": "Node",
     "module": "CommonJS",
+    "moduleResolution": "Node",
 
-    // We don't need these for our final build
     "declarationMap": false,
     "declaration": false,
     "sourceMap": false
