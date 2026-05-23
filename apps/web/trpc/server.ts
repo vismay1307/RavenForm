@@ -1,7 +1,9 @@
-import type { ServerRouter } from "@repo/trpc/client";
 import { createTRPCProxyClient } from "@repo/trpc/client";
+import type { ServerRouter } from "@repo/trpc/client";
 import { headers } from "next/headers";
 import { createTRPCHttpBatchClientClient } from "~/trpc/create-client";
+
+export type { RouterInputs, RouterOutputs, ServerRouter } from "@repo/trpc/client";
 
 export async function getServerApi() {
   const requestHeaders = await headers();
