@@ -62,6 +62,23 @@ function FormCard({
           Edit
         </Link>
 
+        <Link
+          href={`/forms/${form.id}/responses`}
+          className="text-xs px-3 py-1.5 rounded border border-[#2a2a2a] text-[#E8E0D0] hover:border-[#B8960C]/40 hover:text-[#B8960C] transition-colors"
+        >
+          Responses
+        </Link>
+
+        {form.status === "published" && (
+          <Link
+            href={`/f/${form.slug}`}
+            target="_blank"
+            className="text-xs px-3 py-1.5 rounded border border-[#2a2a2a] text-[#6A6478] hover:border-[#B8960C]/40 hover:text-[#B8960C] transition-colors"
+          >
+            Open Form
+          </Link>
+        )}
+
         {form.status === "published" ? (
           <button
             onClick={() => onUnpublish(form.id)}

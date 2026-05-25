@@ -188,6 +188,23 @@ export default function EditFormPage() {
         </div>
 
         <div className="flex gap-2">
+          <Link
+            href={`/forms/${formId}/responses`}
+            className="text-sm px-3 py-1.5 border border-[#2a2a2a] text-[#E8E0D0] rounded hover:border-[#B8960C]/40 hover:text-[#B8960C] transition-colors"
+          >
+            Responses
+          </Link>
+
+          {isPublished && (
+            <Link
+              href={`/f/${form.slug}`}
+              target="_blank"
+              className="text-sm px-3 py-1.5 border border-[#2a2a2a] text-[#E8E0D0] rounded hover:border-[#B8960C]/40 hover:text-[#B8960C] transition-colors"
+            >
+              Open form
+            </Link>
+          )}
+
           {isPublished ? (
             <button
               onClick={() => unpublishMutation.mutate({ id: formId })}

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Cinzel, Inter } from "next/font/google";
-// TypeScript may not have declarations for side-effect CSS imports in this repo setup.
-// @ts-expect-error: side-effect import of CSS
 import "./globals.css";
 import { GlobalProviders } from "~/providers/global";
 
